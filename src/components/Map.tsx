@@ -1,27 +1,34 @@
 import React from 'react';
-import { GoogleMap, LoadScript } from '@react-google-maps/api';
+import { GoogleMap, LoadScript, MarkerF } from '@react-google-maps/api';
 import styled from 'styled-components';
+import { Clubs } from '../constants/clubs';
 
-const containerStyle = {
-  width: '100%',
-  height: '100%',
-};
+interface MapProps {
+  center: {
+    lat: number;
+    lng: number;
+  };
+  zoom: number;
+  clubs: Clubs;
+}
 
-const centerCoordinates = {
-  lat: 37.410105,
-  lng: 127.121215,
-};
+function Map({ zoom, center, clubs }: MapProps) {
+  const containerStyle = {
+    width: '100%',
+    height: '100%',
+  };
 
-function Map() {
   return (
     <Container>
       <LoadScript googleMapsApiKey={import.meta.env.VITE_GOOGLE_MAP_API_KEY}>
         <GoogleMap
           mapContainerStyle={containerStyle}
-          center={centerCoordinates}
-          zoom={10}
+          center={center}
+          zoom={zoom}
         >
-          {/* Child components, such as markers, info windows, etc. */}
+          {clubs.map(({ id, coordinates, icon }) => (
+            <MarkerF key={id} position={coordinates} icon={icon} />
+          ))}
         </GoogleMap>
       </LoadScript>
     </Container>
