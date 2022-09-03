@@ -47,7 +47,7 @@ yarn install
 
 ## UI 가이드
 
-![figure: ui guide](/public/images/ui-guide.png)
+![figure: ui guide](public/ui-guide.png)
 
 ## 참고자료
 
