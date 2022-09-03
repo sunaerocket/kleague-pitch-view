@@ -8,6 +8,7 @@ import gangwonFcIcon from '../assets/icons/gangwonfc.png';
 import jejuUnitedIcon from '../assets/icons/jejuunited.png';
 import incheonUnitedIcon from '../assets/icons/incheonunited.png';
 import pohangSteelersIcon from '../assets/icons/pohangsteelers.png';
+import jeonbukHyundaiIcon from '../assets/icons/jeonbukhyundai.png';
 
 export type Club = {
   id: number;
@@ -132,6 +133,17 @@ const pohangSteelers = {
   icon: pohangSteelersIcon,
 };
 
+const jeonbukHyundai = {
+  id: 11,
+  club: '전북현대모터스',
+  stadium: '전주월드컵경기장',
+  coordinates: {
+    lat: 35.8681258,
+    lng: 127.0644156,
+  },
+  icon: jeonbukHyundaiIcon,
+};
+
 export const CLUBS = [
   seongnamFc,
   kimcheonSangmu,
@@ -143,4 +155,5 @@ export const CLUBS = [
   jejuUnited,
   incheonUnited,
   pohangSteelers,
+  jeonbukHyundai,
 ];
