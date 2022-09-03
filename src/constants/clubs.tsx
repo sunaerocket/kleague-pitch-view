@@ -6,6 +6,7 @@ import fcSeoulIcon from '../assets/icons/fcseoul.png';
 import suwonFcIcon from '../assets/icons/suwonfc.png';
 import gangwonFcIcon from '../assets/icons/gangwonfc.png';
 import jejuUnitedIcon from '../assets/icons/jejuunited.png';
+import incheonUnitedIcon from '../assets/icons/incheonunited.png';
 
 export type Club = {
   id: number;
@@ -108,6 +109,17 @@ const jejuUnited = {
   icon: jejuUnitedIcon,
 };
 
+const incheonUnited = {
+  id: 9,
+  club: '인천유나이티드',
+  stadium: '인천월드컵경기장',
+  coordinates: {
+    lat: 37.4660468,
+    lng: 126.6430109,
+  },
+  icon: incheonUnitedIcon,
+};
+
 export const CLUBS = [
   seongnamFc,
   kimcheonSangmu,
@@ -117,4 +129,5 @@ export const CLUBS = [
   suwonFc,
   gangwonFc,
   jejuUnited,
+  incheonUnited,
 ];
