@@ -2,6 +2,7 @@ import seongnamFcIcon from '../assets/icons/seongnamfc.png';
 import kimcheonSangmuIcon from '../assets/icons/kimcheonsangmu.png';
 import daeguFcIcon from '../assets/icons/daegufc.png';
 import suwonSamsungIcon from '../assets/icons/suwonsamsung.png';
+import fcSeoulIcon from '../assets/icons/fcseoul.png';
 
 export type Club = {
   id: number;
@@ -60,4 +61,21 @@ const suwonSamsung = {
   icon: suwonSamsungIcon,
 };
 
-export const CLUBS = [seongnamFc, kimcheonSangmu, daeguFc, suwonSamsung];
+const fcSeoul = {
+  id: 5,
+  club: 'FC서울',
+  stadium: '서울월드컵경기장',
+  coordinates: {
+    lat: 37.5682588,
+    lng: 126.8972774,
+  },
+  icon: fcSeoulIcon,
+};
+
+export const CLUBS = [
+  seongnamFc,
+  kimcheonSangmu,
+  daeguFc,
+  suwonSamsung,
+  fcSeoul,
+];
