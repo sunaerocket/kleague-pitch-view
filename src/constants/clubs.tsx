@@ -7,6 +7,7 @@ import suwonFcIcon from '../assets/icons/suwonfc.png';
 import gangwonFcIcon from '../assets/icons/gangwonfc.png';
 import jejuUnitedIcon from '../assets/icons/jejuunited.png';
 import incheonUnitedIcon from '../assets/icons/incheonunited.png';
+import pohangSteelersIcon from '../assets/icons/pohangsteelers.png';
 
 export type Club = {
   id: number;
@@ -120,6 +121,17 @@ const incheonUnited = {
   icon: incheonUnitedIcon,
 };
 
+const pohangSteelers = {
+  id: 10,
+  club: '포항스틸러스',
+  stadium: '포항스틸야드',
+  coordinates: {
+    lat: 35.9977189,
+    lng: 129.3844018,
+  },
+  icon: pohangSteelersIcon,
+};
+
 export const CLUBS = [
   seongnamFc,
   kimcheonSangmu,
@@ -130,4 +142,5 @@ export const CLUBS = [
   gangwonFc,
   jejuUnited,
   incheonUnited,
+  pohangSteelers,
 ];
