@@ -1,4 +1,5 @@
 import seongnamFcIcon from '../assets/icons/seongnamfc.png';
+import kimcheonSangmuIcon from '../assets/icons/kimcheonsangmu.png';
 
 export type Club = {
   id: number;
@@ -22,4 +23,14 @@ const seongnamFc = {
   icon: seongnamFcIcon,
 };
 
-export const CLUBS = [seongnamFc];
+const kimcheonSangmu = {
+  id: 2,
+  label: '김천상무',
+  coordinates: {
+    lat: 36.142851,
+    lng: 128.087877,
+  },
+  icon: kimcheonSangmuIcon,
+};
+
+export const CLUBS = [seongnamFc, kimcheonSangmu];
