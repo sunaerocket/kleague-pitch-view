@@ -9,6 +9,7 @@ import jejuUnitedIcon from '../assets/icons/jejuunited.png';
 import incheonUnitedIcon from '../assets/icons/incheonunited.png';
 import pohangSteelersIcon from '../assets/icons/pohangsteelers.png';
 import jeonbukHyundaiIcon from '../assets/icons/jeonbukhyundai.png';
+import ulsanHyundaiIcon from '../assets/icons/ulsanhyundai.png';
 
 export type Club = {
   id: number;
@@ -144,6 +145,17 @@ const jeonbukHyundai = {
   icon: jeonbukHyundaiIcon,
 };
 
+const ulsanHyundai = {
+  id: 12,
+  club: '울산현대',
+  stadium: '울산문수경기장',
+  coordinates: {
+    lat: 35.5352422,
+    lng: 129.2595839,
+  },
+  icon: ulsanHyundaiIcon,
+};
+
 export const CLUBS = [
   seongnamFc,
   kimcheonSangmu,
@@ -156,4 +168,5 @@ export const CLUBS = [
   incheonUnited,
   pohangSteelers,
   jeonbukHyundai,
+  ulsanHyundai,
 ];
