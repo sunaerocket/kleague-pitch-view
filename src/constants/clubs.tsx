@@ -1,5 +1,6 @@
 import seongnamFcIcon from '../assets/icons/seongnamfc.png';
 import kimcheonSangmuIcon from '../assets/icons/kimcheonsangmu.png';
+import daeguFcIcon from '../assets/icons/daegufc.png';
 
 export type Club = {
   id: number;
@@ -33,4 +34,14 @@ const kimcheonSangmu = {
   icon: kimcheonSangmuIcon,
 };
 
-export const CLUBS = [seongnamFc, kimcheonSangmu];
+const daeguFc = {
+  id: 3,
+  label: '대구FC',
+  coordinates: {
+    lat: 35.8812441,
+    lng: 128.5882175,
+  },
+  icon: daeguFcIcon,
+};
+
+export const CLUBS = [seongnamFc, kimcheonSangmu, daeguFc];
