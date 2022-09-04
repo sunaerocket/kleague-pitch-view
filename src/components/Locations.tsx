@@ -11,13 +11,13 @@ interface LocationsProps {
 function Locations({ clubs }: LocationsProps) {
   return (
     <Container>
-      {clubs.map(({ id, club, stadium, icon }) => (
+      {clubs.map(({ id, club, stadium, icon, address }) => (
         <Card key={id}>
           <LocationLayout
             club={club}
             stadium={stadium}
             icon={icon}
-            address="dummy"
+            address={address}
           />
         </Card>
       ))}
