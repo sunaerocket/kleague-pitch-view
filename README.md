@@ -2,12 +2,26 @@
 
 지도에 K리그 구단들의 경기장을 표시합니다.
 
+## 목차
+
+- [⚽️ Pitch View](#⚽️-pitch-view)
+  - [⚙️ 설치](#⚙️-설치)
+  - [💻 명령어](#💻-명령어)
+  - [✋ 보류 작업](#✋-보류-작업)
+    - [#1: 지도 고정 처리](#1-지도-고정-처리)
+    - [#2: 선택된 마커, 지역 정보 하이라이트 처리](#2-선택된-마커-지역-정보-하이라이트-처리)
+  - [⛓️ 작업 과정](#⛓️-작업-과정)
+  - [✨ 트러블슈팅](#✨-트러블슈팅)
+  - [☑️ 점검 사항](#☑️-점검-사항)
+  - [ℹ️ UI 가이드](#ℹ️-ui-가이드)
+  - [🕸️ 참고자료](#🕸️-참고자료)
+
 ## ⚙️ 설치
 
 > 클론 받은 후 의존 패키지를 설치합니다.
 
 ```bash
-git clone https://github.com/sunaerocket/toylerplate.git
+git clone https://github.com/sunaerocket/kleague-pitch-view.git
 ```
 
 ```bash
@@ -22,6 +36,17 @@ yarn install
 - 빌드: `yarn build`
 - 프리뷰: `yarn preview`
 - 코드검사: `yarn check:code`
+
+## ✋ 보류 작업
+
+### #1: 지도 고정 처리
+
+- 초기 지도 라이브러리 선정 시, 옵션 지원 여부 확인 누락
+- 추가 [작업을 위한 레퍼런스](https://codesandbox.io/s/6ytyjj?file=/index.tsx) 확보하고 공수가 큰 작업이라 보류 결정
+
+### #2: 선택된 마커, 지역 정보 하이라이트 처리
+
+- 상태관리와 사용자 이벤트를 처리하는 로직을 보여줄 목적이었지만 중요도가 떨어져 보류 결정
 
 ## ⛓️ 작업 과정
 
@@ -48,6 +73,11 @@ yarn install
 
   - 구단별 경기장 정보 목록을 받아서 위치 정보 카드를 표시
 
+- 모바일 레이아웃 적용
+
+  - iPhone 12 Pro 너비 이하 기준으로 작업
+  - 지도 영역과 상세 정보 영역을 수직으로 배치
+
 ## ✨ 트러블슈팅
 
 - 이슈#1: 새로고침 이후 마커가 사라지는 문제
@@ -66,10 +96,10 @@ yarn install
 - [x] Google Maps SDK 사용
   - [ ] 지도 고정 처리
   - [x] 마커 10개 이상
-- [ ] 모바일 환경에 대응하는 반응형 코드 작성
+- [x] 모바일 환경에 대응하는 반응형 코드 작성
 - [x] README 파일 작성
-- [ ] 작업 내역을 알 수 있도록 커밋 메시지 작성
-- [ ] 원격 저장소 링크로 제출
+- [x] 작업 내역을 알 수 있도록 커밋 메시지 작성
+- [x] 원격 저장소 링크로 제출
 
 ## ℹ️ UI 가이드
 
@@ -84,4 +114,3 @@ yarn install
 - [Service, www.latlong.net](https://www.latlong.net/)
 - [Docs, @googlemaps/react-wrapper](https://github.com/googlemaps/react-wrapper)
 - [Post, 'section vs article'](https://stackoverflow.com/questions/7549561/section-vs-article-html5)
-- [Service, box-shadow-css-generator](https://cssgenerator.org/box-shadow-css-generator.html)
