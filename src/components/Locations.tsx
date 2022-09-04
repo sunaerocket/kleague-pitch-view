@@ -34,4 +34,9 @@ const Container = styled.section`
   flex-direction: column;
   justify-content: center;
   border: 1px solid #000;
+
+  @media screen and (max-width: 390px) {
+    width: 100vw;
+    height: fit-content;
+  }
 `;
