@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Map from './components/Map';
+import Locations from './components/Locations';
 import { BASE_COORDINATES, BASE_ZOOM } from './constants/config';
 import { CLUBS } from './constants/clubs';
 
@@ -8,7 +9,7 @@ function App() {
   return (
     <Container>
       <Map center={BASE_COORDINATES} zoom={BASE_ZOOM} clubs={CLUBS} />
-      <LocationListContainer>장소 목록영역</LocationListContainer>
+      <Locations clubs={CLUBS} />
     </Container>
   );
 }
@@ -22,12 +23,4 @@ const Container = styled.main`
   flex-direction: row;
   align-items: center;
   margin: 0 auto;
-`;
-const LocationListContainer = styled.section`
-  width: 240px;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid #000;
 `;

@@ -44,6 +44,10 @@ yarn install
 
   - 구단별 경기장 정보 목록을 받아서 마커를 표시
 
+- 위치 정보 표시
+
+  - 구단별 경기장 정보 목록을 받아서 위치 정보 카드를 표시
+
 ## ✨ 트러블슈팅
 
 - 이슈#1: 새로고침 이후 마커가 사라지는 문제
@@ -79,3 +83,5 @@ yarn install
 - [Docs, vite 환경변수 설정하기](https://vitejs.dev/guide/env-and-mode.html#env-files)
 - [Service, www.latlong.net](https://www.latlong.net/)
 - [Docs, @googlemaps/react-wrapper](https://github.com/googlemaps/react-wrapper)
+- [Post, 'section vs article'](https://stackoverflow.com/questions/7549561/section-vs-article-html5)
+- [Service, box-shadow-css-generator](https://cssgenerator.org/box-shadow-css-generator.html)
