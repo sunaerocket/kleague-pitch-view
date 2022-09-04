@@ -62,8 +62,8 @@ const suwonSamsung = {
   club: '수원삼성',
   stadium: '수원월드컵경기장',
   coordinates: {
-    lat: 37.263333,
-    lng: 127.028611,
+    lat: 37.2864742,
+    lng: 127.036866,
   },
   icon: suwonSamsungIcon,
 };
@@ -84,8 +84,8 @@ const suwonFc = {
   club: '수원FC',
   stadium: '수원종합운동장',
   coordinates: {
-    lat: 37.263333,
-    lng: 127.028611,
+    lat: 37.2990045,
+    lng: 127.0112044,
   },
   icon: suwonFcIcon,
 };
