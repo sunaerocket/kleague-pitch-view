@@ -23,4 +23,10 @@ const Container = styled.main`
   flex-direction: row;
   align-items: center;
   margin: 0 auto;
+
+  @media screen and (max-width: 390px) {
+    flex-direction: column;
+    width: 100vw;
+    height: fit-content;
+  }
 `;
